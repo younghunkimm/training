@@ -26,6 +26,14 @@ $(function(){
         }
     });
 
+    $('#header .menu_open_btn').on('click', function(){
+        $(this).toggleClass('on');
+        $('#header .gnb_wrap').toggleClass('on');
+    });
+
+    const topLine = $('#header .top_line').clone();
+
+    $('#header .gnb_wrap nav').prepend(topLine);
 
 // --------------------------------------------------
 })
